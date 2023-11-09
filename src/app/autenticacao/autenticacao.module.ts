@@ -5,19 +5,19 @@ import { LoginComponent } from './login/login.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../core/material/material.module';
-
-
+import { AutenticacaoRoutingModule } from './autenticacao-routing.module';
 
 @NgModule({
   declarations: [
     CadastroComponent,
     LoginComponent,
-    PerfilComponent
+    PerfilComponent,
   ],
   imports: [
     CommonModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    AutenticacaoRoutingModule
   ],
   exports: [
     LoginComponent,
